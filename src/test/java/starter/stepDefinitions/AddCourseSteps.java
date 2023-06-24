@@ -12,27 +12,29 @@ public class AddCourseSteps {
     Login login;
     @Steps
     Home home;
+    private String liveSessionSchedule;
 
-    @Given("I am on the homepage")
-    public void IamOnHomePage(){
+    @Given("I am on home page")
+    public void IamInHomePage(){
         home.openUrl("https://staredu-desktop-dev.netlify.app/dashboard");
-        login.inputEmail("mentorsatu@gmail.com");
+        login.inputEmail("mentor.satu@gmail.com");
         login.inputPassword("12345678");
         login.ClickLoginButton();
     }
 
-    @When("I click on the Add Course button")
+    @When("I click on the Add Course session")
     public void ClickAddCouseSection(){
         home.clickAddCourseSection();
     }
 
-    @And("I Fill in the Course Name field {string}")
+    @And("I fill in the Course Name field {string}")
     public void FillNameCourse(String NameCourse){
         home.fillNameCourse(NameCourse);
     }
 
     @And("I fill in the Live Session Schedule field {string}")
     public void FillLiveSessionSchedule(String LiveSessionSchedule){
+        liveSessionSchedule = LiveSessionSchedule;
         home.fillLiveSessionSchedule(LiveSessionSchedule);
     }
 
@@ -41,15 +43,18 @@ public class AddCourseSteps {
         home.clickTumbnailButton();
     }
 
-    @And("I Choose the thumbnail")
+    @And("I choose the thumbnail")
     public void ChooseTumbnailIcon(){
         home.clickTumbnailIcon();
     }
 
-    @And("I Click on the Add Course button")
+    @And("I click on the Add Course button")
     public void ClickAddCourseButton(){
         home.clickAddCourse();
     }
+
+    @And("I click on the cancel button")
+    public void  clickCancelButton() { home.clickCancel();}
 
     @Then("I success add course")
     public void SuccessAddCourse(){

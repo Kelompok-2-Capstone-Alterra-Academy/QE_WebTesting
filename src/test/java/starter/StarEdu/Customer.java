@@ -15,6 +15,10 @@ public class Customer extends PageObject {
     private By SaveChange() { return By.xpath("/html/body/div[2]/div[3]/button");}
     private By SearchNameField() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/div[2]/div[3]");}
     private By fillNameField() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/div[2]/div[3]/input");}
+    private By ContactStudents() { return By.xpath("/html/body/div/div[1]/div[2]/div/div[3]/div/table/tbody/tr[1]/td[5]/div/button[1]");}
+    private By RemoveSessionButton() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[3]/div/table/tbody/tr[2]/td[5]/div/button[2]");}
+    private By RemoveButton() { return By.xpath("/html/body/div[2]/div[3]/div[2]/button[2]");}
+    private By CancelRemoveButton() { return By.xpath("/html/body/div[2]/div[3]/div[2]/button[1]");}
 
     @Step
     public static OpenUrl url(String targetUrl) { return new OpenUrl(targetUrl);}
@@ -35,7 +39,13 @@ public class Customer extends PageObject {
     @Step
     public void clickSearchName() { $(SearchNameField()).click();}
     @Step
-    public void fillSearchNameField(String SearchName){
-        $(fillNameField()).type(SearchName);
-    }
+    public void fillSearchNameField(String SearchName) { $(fillNameField()).type(SearchName);}
+    @Step
+    public void contact() { $(ContactStudents()).click();}
+    @Step
+    public void clickRemoveSessionStudents() { $(RemoveSessionButton()).click();}
+    @Step
+    public void clickRemoveButton() { $(RemoveButton()).click();}
+    @Step
+    public void clickCancelRemoveButton() { $(CancelRemoveButton()).click();}
 }

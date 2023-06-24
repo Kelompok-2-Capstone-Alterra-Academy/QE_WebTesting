@@ -45,13 +45,53 @@ public class AddVideoSteps {
     }
     @And("I add new video section course")
     public void addNewVideoSectionCourse(){
+        addVideo.addVideoSection();
+        addVideo.selectVideoType();
+        addVideo.clickVideoSection();
         addVideo.clickEditVideoIcon();
-        addVideo.fillNameCourseSection("Video - Hukum Newton");
+        addVideo.fillVideoNameCourseSection("Video Hukum Newton");
         addVideo.renameVideoCourseSection();
         addVideo.saveRenameVideoCourseSection();
     }
+    @And("I cancel rename new video section course")
+    public void cancelRenameVideoSectionCourse(){
+        addVideo.addVideoSection();
+        addVideo.selectVideoType();
+        addVideo.clickVideoSection();
+        addVideo.clickEditVideoIcon();
+        addVideo.fillVideoNameCourseSection("Video Hukum Newton");
+        addVideo.renameVideoCourseSection();
+        addVideo.cancelRenameVideoCourseSection();
+    }
+    @And("I add new description video")
+    public void addNewDescriptionVideo(){
+        addVideo.clickDescriptionIcon();
+        addVideo.fillDescriptionForVideo("Ini merupakan video pembelajaran mengenai hukum newton. Silakan disimak dan diperhatikan baik baik !");
+        addVideo.clickSaveDescription();
+        addVideo.seeDescriptionVideo();
+    }
+    @And("I add new video course")
+    public void addNewVideoCourse(){
+        addVideo.clickAddVideo();
+        addVideo.clickAddFolderVideo();
+        addVideo.clickAddFileVideo();
+        addVideo.clickViewVideo();
+    }
+    @And("I search for video from the either folder")
+    public void addSearchVideoCourse(){
+        addVideo.clickAddVideo();
+        addVideo.clickSearhField();
+        addVideo.fillSeacrhField("React");
+        addVideo.clickAddFolderVideo();
+        addVideo.clickAddFileVideo();
+        addVideo.clickViewVideo();
+    }
     @Then("I success add video section course")
     public void SuccessAddVideo(){
+        addVideo.validateOnTheCoursePage();
+    }
+    @Then("I success cancel rename video section course")
+    public void SuccessCancelRenameVideo(){
         addVideo.validateOnTheCoursePage();
     }
 }

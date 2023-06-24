@@ -1,14 +1,15 @@
 Feature: Customer
 
+  @Material
   Scenario: Mentor can see students on one of the courses
-    Given I am in the home page
+    Given I am on the home page
     When I click customer section
     Then I am on the customer page
     And I select a subject on choose course option
     Then I see students of the courses
 
   Scenario: Mentor can view students based on a certain order
-    Given I am in the home page
+    Given I am on the home page
     When I click customer section
     Then I am on the customer page
     And I select a subject on choose course option
@@ -16,7 +17,7 @@ Feature: Customer
     Then I see students of the courses
 
   Scenario: Mentor can search for the student name to see student progress
-    Given I am in the home page
+    Given I am on the home page
     When I click customer section
     Then I am on the customer page
     And I select a subject on choose course option
@@ -25,7 +26,7 @@ Feature: Customer
     Then I see students of the courses
 
   Scenario: Mentor can contact students on one of the courses
-    Given I am in the home page
+    Given I am on the home page
     When I click customer section
     Then I am on the customer page
     And I select a subject on choose course option
@@ -33,7 +34,7 @@ Feature: Customer
     Then I see students of the courses
 
   Scenario: Mentor can contact students on one of the courses
-    Given I am in the home page
+    Given I am on the home page
     When I click customer section
     Then I am on the customer page
     And I select a subject on choose course option
@@ -41,7 +42,7 @@ Feature: Customer
     Then I see students of the courses
 
   Scenario: Mentor cancel remove students
-    Given I am in the home page
+    Given I am on the home page
     When I click customer section
     Then I am on the customer page
     And I select a subject on choose course option
@@ -49,7 +50,7 @@ Feature: Customer
     Then I see students of the courses
 
   Scenario: Mentor can remove students
-    Given I am in the home page
+    Given I am on the home page
     When I click customer section
     Then I am on the customer page
     And I select a subject on choose course option

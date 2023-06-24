@@ -59,7 +59,7 @@ public class AddVideo extends PageObject {
     @Step
     public void saveRenameCourseSection() { $(saveRenameSection()).click();}
     @Step
-    public void addVideoSection() { $(addSectionIcon()).click();}
+    public void clickContentTypeSection() { $(addSectionIcon()).click();}
     @Step
     public void selectVideoType() { $(selectVideoContentType()).click();}
     @Step

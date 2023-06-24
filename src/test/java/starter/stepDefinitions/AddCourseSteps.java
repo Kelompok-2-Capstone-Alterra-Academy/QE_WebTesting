@@ -14,14 +14,6 @@ public class AddCourseSteps {
     Home home;
     private String liveSessionSchedule;
 
-    @Given("I am on home page")
-    public void IamInHomePage(){
-        home.openUrl("https://staredu-desktop-dev.netlify.app/dashboard");
-        login.inputEmail("mentor.satu@gmail.com");
-        login.inputPassword("12345678");
-        login.ClickLoginButton();
-    }
-
     @When("I click on the Add Course session")
     public void ClickAddCouseSection(){
         home.clickAddCourseSection();

@@ -19,7 +19,7 @@ public class CustomerSteps {
     @Steps
     Customer customer;
 
-    @Given("I am in the home page")
+    @Given("I am on the home page")
     public void InTheHomePage(){
         home.openUrl("https://staredu-desktop-dev.netlify.app/dashboard");
         login.inputEmail("mentor.satu@gmail.com");

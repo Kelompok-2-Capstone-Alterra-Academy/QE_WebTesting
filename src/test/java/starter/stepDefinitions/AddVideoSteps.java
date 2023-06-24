@@ -17,13 +17,6 @@ public class AddVideoSteps {
     @Steps
     AddVideo addVideo;
 
-    @Given("I am on the homepage")
-    public void IamOnHomePage(){
-        home.openUrl("https://staredu-desktop-dev.netlify.app/dashboard");
-        login.inputEmail("mentor.satu@gmail.com");
-        login.inputPassword("12345678");
-        login.ClickLoginButton();
-    }
     @When("I click on the subject course section")
     public void ClickSubjectCourse(){
         addVideo.clickSubjectCourse();
@@ -45,7 +38,7 @@ public class AddVideoSteps {
     }
     @And("I add new video section course")
     public void addNewVideoSectionCourse(){
-        addVideo.addVideoSection();
+        addVideo.clickContentTypeSection();
         addVideo.selectVideoType();
         addVideo.clickVideoSection();
         addVideo.clickEditVideoIcon();
@@ -55,11 +48,9 @@ public class AddVideoSteps {
     }
     @And("I cancel rename new video section course")
     public void cancelRenameVideoSectionCourse(){
-        addVideo.addVideoSection();
-        addVideo.selectVideoType();
         addVideo.clickVideoSection();
         addVideo.clickEditVideoIcon();
-        addVideo.fillVideoNameCourseSection("Video Hukum Newton");
+        addVideo.fillVideoNameCourseSection("Video Hukum Gravitasi");
         addVideo.renameVideoCourseSection();
         addVideo.cancelRenameVideoCourseSection();
     }
@@ -94,4 +85,5 @@ public class AddVideoSteps {
     public void SuccessCancelRenameVideo(){
         addVideo.validateOnTheCoursePage();
     }
+
 }

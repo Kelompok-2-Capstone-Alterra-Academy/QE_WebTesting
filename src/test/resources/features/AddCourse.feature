@@ -1,7 +1,7 @@
 Feature: Add Course
 
   Scenario: Mentor add course
-    Given I am on the homepage
+    Given I am on the home page
     When I click on the Add Course session
     And I fill in the Course Name field "Biologi"
     And I fill in the Live Session Schedule field "Kamis, Jumat 12.00 - 14.00"
@@ -11,7 +11,7 @@ Feature: Add Course
     Then I success add course
 
   Scenario: Mentor cancel the add of a course
-    Given I am on the homepage
+    Given I am on the home page
     When I click on the Add Course session
     And I fill in the Course Name field "Fisika"
     And I fill in the Live Session Schedule field "Kamis, Jumat 12.00 - 14.00"

@@ -6,7 +6,7 @@ Feature: Authentication
     When I enter email "mentor.satu@gmail.com"
     And I enter password "12345678"
     And I click login button
-    Then I am on the home page
+    Then I am on the homepage
 
 
 

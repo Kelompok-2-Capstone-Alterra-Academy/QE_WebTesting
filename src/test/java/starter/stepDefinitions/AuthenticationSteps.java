@@ -37,7 +37,7 @@ public class AuthenticationSteps {
         login.ClickLoginButton();
     }
 
-    @Then("I am on the home page")
+    @Then("I am on the homepage")
     public void iAmOnTheHomePage() {
         home.validateOnTheHomePage();
     }

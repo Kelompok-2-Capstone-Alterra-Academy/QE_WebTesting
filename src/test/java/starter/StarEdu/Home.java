@@ -9,7 +9,7 @@ public class Home extends PageObject {
     private By dashboard(){
         return By.xpath("//*[@id=\"root\"]");
     }
-    private By AddCourseSection() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div/div[3]/div[2]/div[1]");}
+    private By AddCourseSection() { return By.cssSelector("//*[@id=\"root\"]/div[1]/div[2]/div/div/div[3]/div[2]/div[1]");}
     private By nameCourseField() {return By.xpath("/html/body/div[2]/div[3]/div[2]/div[1]/input");}
     private By liveSessionScheduleField() {return By.xpath("/html/body/div[2]/div[3]/div[2]/div[2]/input");}
     private By tumbnailButton(){return By.xpath("/html/body/div[2]/div[3]/div[2]/div[3]/div");}

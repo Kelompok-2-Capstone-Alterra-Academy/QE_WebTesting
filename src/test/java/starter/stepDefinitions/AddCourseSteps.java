@@ -6,15 +6,19 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 import starter.StarEdu.Home;
+import starter.StarEdu.Login;
 
 public class AddCourseSteps {
+    Login login;
     @Steps
     Home home;
 
     @Given("I am on the homepage")
     public void IamOnHomePage(){
         home.openUrl("https://staredu-desktop-dev.netlify.app/dashboard");
-        home.iamOnTheHomePage();
+        login.inputEmail("mentorsatu@gmail.com");
+        login.inputPassword("12345678");
+        login.ClickLoginButton();
     }
 
     @When("I click on the Add Course button")

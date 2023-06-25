@@ -1,6 +1,6 @@
 Feature: Add Video
 
-  @Course
+
   Scenario: Mentor cancel save video names to part of the course
     Given I am on the home page
     When I click on the subject course section
@@ -10,7 +10,7 @@ Feature: Add Video
     And I cancel rename new video section course
     Then I success cancel rename video section course
 
-  @Course
+
   Scenario: Mentor can save video to part of the course
     Given I am on the home page
     When I click on the subject course section
@@ -18,7 +18,7 @@ Feature: Add Video
     And I add new video section course
     Then I success add video section course
 
-  @Course
+
   Scenario: Mentors can add a description video
     Given I am on the home page
     When I click on the subject course section
@@ -26,7 +26,7 @@ Feature: Add Video
     And I add new description video
     Then I success add video section course
 
-  @Course
+
   Scenario: The mentor searches for material from one of the folders with the correct folder name keywords
     Given I am on the home page
     When I click on the subject course section
@@ -34,7 +34,7 @@ Feature: Add Video
     And I search for video from the either folder
     Then I success add video section course
 
-  @Course
+
   Scenario: Mentor add to video
     Given I am on the home page
     When I click on the subject course section

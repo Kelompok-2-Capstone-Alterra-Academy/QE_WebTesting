@@ -31,7 +31,7 @@ public class AddVideo extends PageObject {
 
     private By selectVideoContentType() { return By.xpath ("//*[@id=\"root\"]/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div/div/div[1]");}
 
-    private By videoSection() { return By.xpath("//*[@id=\"content-533\"]");}
+    private By videoSection() { return By.xpath("//*[@id=\"content-537\"]");}
 
     private By editNameVideo() {return By.id("contentTitleEditIcon");}
 

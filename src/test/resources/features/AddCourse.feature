@@ -1,5 +1,6 @@
 Feature: Add Course
 
+
   Scenario: Mentor add course
     Given I am on the home page
     When I click on the Add Course session
@@ -10,6 +11,7 @@ Feature: Add Course
     And I click on the Add Course button
     Then I success add course
 
+  @AddCourse
   Scenario: Mentor cancel the add of a course
     Given I am on the home page
     When I click on the Add Course session

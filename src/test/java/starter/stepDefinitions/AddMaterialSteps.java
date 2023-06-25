@@ -10,26 +10,64 @@ import starter.StarEdu.Login;
 
 public class AddMaterialSteps {
     @Steps
-    Login login;
-    @Steps
-    Home home;
-    @Steps
     AddVideo addVideo;
+
     @Steps
     AddMaterial addMaterial;
 
-    @And("I add new material section course")
-    public void addNewVideoSectionCourse() {
+    @And("I cancel rename new material section course")
+    public void CancelNameMaterialSectionCourse() {
         addVideo.clickContentTypeSection();
         addMaterial.selectMaterialType();
         addMaterial.addMaterialSection();
         addMaterial.clickEditMaterialIcon();
         addMaterial.fillMaterialNameCourseSection("Materi Hukum Newton");
         addMaterial.renameMaterialCourseSection();
+        addMaterial.cancelRenameMaterialCourseSection();
+    }
+
+    @And("I add new material section course")
+    public void addNewMaterialSectionCourse(){
+        addMaterial.addMaterialSection();
+        addMaterial.clickEditMaterialIcon();
+        addMaterial.fillMaterialNameCourseSection("Materi Hukum Gravitasi");
+        addMaterial.renameMaterialCourseSection();
         addMaterial.saveRenameMaterialCourseSection();
     }
-    @Then("I success add material section course")
-    public void SuccessCancelRenameVideo(){
+
+    @And("I add new description material")
+    public void addNewDescriptionMaterial(){
+        addMaterial.addMaterialSection();
+        addMaterial.clickDescriptionMaterialIcon();
+        addMaterial.fillDescriptionForMaterial("Ini merupakan materi pembelajaran mengenai hukum gravitasi. Silakan dipelajari dengan baik !");
+        addMaterial.clickSaveMaterialDescription();
+        addMaterial.seeDescriptionMaterial();
+    }
+
+    @And("I search for material from the either folder")
+    public void addSearchMaterialCourse(){
+        addMaterial.addMaterialSection();
+        addMaterial.clickAddMaterial();
+        addMaterial.clickSearhMaterialField();
+        addMaterial.fillSeacrhMaterialField("Flutter");
+    }
+
+    @And("I add new material course")
+    public void addNewMaterialCourse(){
+        addMaterial.addMaterialSection();
+        addMaterial.clickAddMaterial();
+        addMaterial.clickAddFolderMaterial();
+        addMaterial.clickAddFileMaterial();
+        addMaterial.clickViewMaterial();
+    }
+
+    @Then("I success cancel rename material section course")
+    public void SuccessCancelRenameMaterial(){
         addMaterial.validateOnCoursePage();
         }
+
+    @Then("I success add material section course")
+    public void SuccessRenameMaterial(){
+        addMaterial.validateOnCoursePage();
     }
+}

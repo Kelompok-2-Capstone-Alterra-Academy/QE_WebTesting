@@ -9,9 +9,9 @@ import starter.StarEdu.Home;
 import starter.StarEdu.Login;
 
 public class AddCourseSteps {
-    Login login;
     @Steps
     Home home;
+
     private String liveSessionSchedule;
 
     @When("I click on the Add Course session")

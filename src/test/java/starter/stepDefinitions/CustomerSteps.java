@@ -26,19 +26,23 @@ public class CustomerSteps {
         login.inputPassword("12345678");
         login.ClickLoginButton();
     }
+
     @When("I click customer section")
     public void iClickCustomerSection(){
         home.clickCustumerSection();
     }
+
     @Then("I am on the customer page")
     public  void iamOnTheCustomerPage(){
         customer.validateOnTheCustomerPage();
     }
+
     @And("I select a subject on choose course option")
     public void iSelectSubject(){
         customer.clickdropdwornIcon();
         customer.selectOneOfCourse();
     }
+
     @And("I do sorting students")
     public void sorting(){
         customer.clickSorting();
@@ -46,6 +50,7 @@ public class CustomerSteps {
         customer.clickLongest();
         customer.clickSaveChange();
     }
+
     @And("I search for the student name")
     public void searchNameStudents(){
         customer.clickSearchName();
@@ -55,16 +60,19 @@ public class CustomerSteps {
     public void contactOneOfStudents(){
         customer.contact();
     }
+
     @And("I cancel remove students")
     public void cancelRemoveStudents(){
         customer.clickRemoveSessionStudents();
         customer.clickCancelRemoveButton();
     }
+
     @And("I remove students")
     public void RemoveStudents(){
         customer.clickRemoveSessionStudents();
         customer.clickRemoveButton();
     }
+
     @Then("I see students of the courses")
     public void successSeeStudents(){
         customer.validateOnTheCustomerPage();

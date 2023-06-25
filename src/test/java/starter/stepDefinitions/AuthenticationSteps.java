@@ -31,7 +31,6 @@ public class AuthenticationSteps {
         login.inputPassword(password);
     }
 
-
     @And("I click login button")
     public void iClickLoginButton() {
         login.ClickLoginButton();

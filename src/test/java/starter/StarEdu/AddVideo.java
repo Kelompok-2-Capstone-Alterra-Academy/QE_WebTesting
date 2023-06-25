@@ -13,7 +13,7 @@ public class AddVideo extends PageObject {
 
     private By nextIcon() { return By.xpath("/html/body/div/div[1]/div[2]/div/div/div[3]/div[1]/svg[2]");}
 
-    private By subjectSection() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div/div[3]/div[2]/div[7]/div[2]/div/span");}
+    private By subjectSection() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div/div[3]/div[2]/div[7]/div[2]");}
 
     private By plusIcon() {return By.id("addSectionIcon");}
 
@@ -31,7 +31,7 @@ public class AddVideo extends PageObject {
 
     private By selectVideoContentType() { return By.xpath ("//*[@id=\"root\"]/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div/div/div[1]");}
 
-    private By videoSection() { return By.xpath("//*[@id=\"root\"]/div[1]/div/div[2]/div[1]/div[2]/div[3]/div/div/span");}
+    private By videoSection() { return By.xpath("//*[@id=\"content-533\"]");}
 
     private By editNameVideo() {return By.id("contentTitleEditIcon");}
 

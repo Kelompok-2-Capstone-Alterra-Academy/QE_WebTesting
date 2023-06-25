@@ -8,41 +8,42 @@ import org.openqa.selenium.By;
 public class AddQuiz extends PageObject {
     private By coursePage() { return By.xpath("//*[@id=\"root\"]/div[1]/div");}
 
-    private By selectQuizContentType() { return By.xpath ("");}
+    private By selectQuizContentType() { return By.xpath ("//*[@id=\"selectWrapper\"]/div/div/div[4]");}
 
-    private By quizSection() { return By.xpath("");}
+    private By quizSection() { return By.xpath("//*[@id=\"content-535\"]");}
 
-    private By editNameQuiz() {return By.id("");}
+    private By editNameQuiz() {return By.id("contentTitleEditIcon");}
 
-    private By fillQuizNameSection() { return By.id("");}
+    private By fillQuizNameSection() { return By.id("contentTitleInput");}
 
-    private By renameQuizSection() { return By.xpath("");}
+    private By renameQuizSection() { return By.id("saveButton");}
 
-    private By saveRenameQuizSection() { return By.xpath("");}
+    private By saveRenameQuizSection() { return By.xpath("/html/body/div[2]/div[3]/div[2]/button[2]");}
 
-    private By cancelRenameQuizSection() { return By.xpath("");}
+    private By cancelRenameQuizSection() { return By.xpath("/html/body/div[2]/div[3]/div[2]/button[1]");}
 
-    private By descriptionQuizIcon() { return By.id("");}
+    private By descriptionQuizIcon() { return By.id("addTextButton");}
 
-    private By fillDescriptionQuiz() { return By.xpath("");}
+    private By fillDescriptionQuiz() { return By.xpath("/html/body/div[2]/div[3]/textarea");}
 
-    private By saveAddDescriptionQuiz() { return By.id("");}
+    private By saveAddDescriptionQuiz() { return By.id("addDescSaveButton");}
 
-    private By seeDescriptionQuizIcon() { return By.id("");}
+    private By seeDescriptionQuizIcon() { return By.id("contentDescription");}
 
-    private By addQuiz() { return By.id("");}
+    private By addQuiz() { return By.id("addContentButton");}
 
-    private By addFileQuiz() { return By.id("");}
+    private By addFileQuiz() { return By.id("modalTableSelect");}
 
-    private By viewQuiz() { return By.id("");}
+    private By viewQuiz() { return By.id("contentTitleContainer");}
 
-    private By searchFolderQuizField() { return By.id("");}
+    private By searchFileQuizField() { return By.id("modalSearch");}
 
-    private By fillSearchFileQuiz() { return By.id("");}
+    private By fillSearchFileQuiz() { return By.id("modalSearchInput");}
 
-    private By numberOfFilesQuizPerPage() { return By.id("");}
+    private By numberOfFilesQuizPerPage() { return By.id("modalContentSelectContainer");}
 
-    private By SelectNumberQuizPerPage() { return By.id("");}
+    private By SelectNumberQuizPerPage() { return By.id("/html/body/div[2]/div[3]/div[2]/div[1]/div/div/div/div[3]");}
+
 
     @Step
     public static OpenUrl url(String targetUrl) { return new OpenUrl(targetUrl);}
@@ -93,7 +94,7 @@ public class AddQuiz extends PageObject {
     public void clickViewQuiz() { $(viewQuiz()).click();}
 
     @Step
-    public void clickSearhQuizField() { $(searchFolderQuizField()).click();}
+    public void clickSearhQuizField() { $(searchFileQuizField()).click();}
 
     @Step
     public void fillSeacrhQuizField(String SearhFileQuiz) { $(fillSearchFileQuiz()).type(SearhFileQuiz);}

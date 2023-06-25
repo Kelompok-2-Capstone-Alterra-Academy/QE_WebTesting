@@ -11,7 +11,7 @@ public class AddMaterial extends PageObject {
 
     private By selectMaterialContentType() { return By.xpath ("//*[@id=\"selectWrapper\"]/div/div/div[2]");}
 
-    private By materialSection() { return By.className("svg-inline--fa fa-file-lines _modulTypeIcon_15tdv_195");}
+    private By materialSection() { return By.xpath("//*[@id=\"content-534\"]");}
 
     private By editNameMaterial() {return By.id("contentTitleEditIcon");}
 
@@ -33,7 +33,7 @@ public class AddMaterial extends PageObject {
 
     private By addMaterial() { return By.id("addContentButton");}
 
-    private By addFolderMaterial() { return By.id("modalContentCard-59");}
+    private By addFolderMaterial() { return By.id("modalContentCardIcon-58");}
 
     private By addFileMaterial() { return By.id("modalTableSelect");}
 

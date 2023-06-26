@@ -4,8 +4,6 @@ import net.serenitybdd.screenplay.actions.OpenUrl;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.w3c.dom.html.HTMLInputElement;
 
 public class AddVideo extends PageObject {
 

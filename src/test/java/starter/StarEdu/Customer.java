@@ -10,7 +10,7 @@ public class Customer extends PageObject {
 
     private By selectCourseIcon() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/div[2]/div[1]");}
 
-    private By selectCourse() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[4]");}
+    private By selectCourse() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]");}
 
     private By Sort() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/div[2]/div[2]");}
 
@@ -24,9 +24,9 @@ public class Customer extends PageObject {
 
     private By fillNameField() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/div[2]/div[3]/input");}
 
-    private By ContactStudents() { return By.xpath("/html/body/div/div[1]/div[2]/div/div[3]/div/table/tbody/tr[1]/td[5]/div/button[1]");}
+    private By ContactStudents() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[3]/div/table/tbody/tr[4]/td[5]/div/button[1]");}
 
-    private By RemoveSessionButton() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[3]/div/table/tbody/tr[2]/td[5]/div/button[2]");}
+    private By RemoveSessionButton() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[3]/div/table/tbody/tr[3]/td[5]/div/button[2]");}
 
     private By RemoveButton() { return By.xpath("/html/body/div[2]/div[3]/div[2]/button[2]");}
 

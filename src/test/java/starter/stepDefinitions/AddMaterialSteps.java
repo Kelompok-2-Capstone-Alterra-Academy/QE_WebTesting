@@ -66,7 +66,7 @@ public class AddMaterialSteps {
         addMaterial.validateOnCoursePage();
         }
 
-    @Then("I success add material section course")
+    @Then("I success add course material content")
     public void SuccessRenameMaterial(){
         addMaterial.validateOnCoursePage();
     }

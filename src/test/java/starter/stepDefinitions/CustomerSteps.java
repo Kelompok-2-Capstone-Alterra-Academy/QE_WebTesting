@@ -58,17 +58,23 @@ public class CustomerSteps {
     }
     @And("I click contact one of students")
     public void contactOneOfStudents(){
+        customer.clickdropdwornIcon();
+        customer.selectOneOfCourse();
         customer.contact();
     }
 
     @And("I cancel remove students")
     public void cancelRemoveStudents(){
+        customer.clickdropdwornIcon();
+        customer.selectOneOfCourse();
         customer.clickRemoveSessionStudents();
         customer.clickCancelRemoveButton();
     }
 
     @And("I remove students")
     public void RemoveStudents(){
+        customer.clickdropdwornIcon();
+        customer.selectOneOfCourse();
         customer.clickRemoveSessionStudents();
         customer.clickRemoveButton();
     }

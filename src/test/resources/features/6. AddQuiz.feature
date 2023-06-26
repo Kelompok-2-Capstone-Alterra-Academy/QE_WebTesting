@@ -14,7 +14,7 @@ Feature: Add Quiz
     When I click on the subject course section
     Then I am on the course page
     And I add new quiz section course
-    Then I success add quiz section course
+    Then I success add course quiz content
 
 
   Scenario: Mentors can add a description quiz
@@ -22,7 +22,7 @@ Feature: Add Quiz
     When I click on the subject course section
     Then I am on the course page
     And I add new description quiz
-    Then I success add quiz section course
+    Then I success add course quiz content
 
 
   Scenario: The mentor searches for quiz from one of the folders with the correct folder name keywords
@@ -30,20 +30,12 @@ Feature: Add Quiz
     When I click on the subject course section
     Then I am on the course page
     And I search for quiz from the either folder
-    Then I success add quiz section course
+    Then I success add course quiz content
 
-
-  Scenario: Mentors can display the number of quizzes on each page
-    Given I am on the home page
-    When I click on the subject course section
-    Then I am on the course page
-    And I choose number of quizzes on each page
-    Then I success add quiz section course
-
-
+  @Course
   Scenario: Mentor add to quiz
     Given I am on the home page
     When I click on the subject course section
     Then I am on the course page
     And I add new quiz course
-    Then I success add quiz section course
+    Then I success add course quiz content

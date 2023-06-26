@@ -51,14 +51,6 @@ public class AddQuizSteps extends PageObject {
         addQuiz.fillSeacrhQuizField("Quiz 1");
     }
 
-    @And("I choose number of quizzes on each page")
-    public void addChooseNumberQuizPerPage(){
-        addQuiz.addQuizSection();
-        addQuiz.clickAddQuiz();
-        addQuiz.clickNumberOfFilesQuizPerPage();
-        addQuiz.chooseNumberQuizPerPage();
-    }
-
     @And("I add new quiz course")
     public void addNewQuizCourse(){
         addQuiz.addQuizSection();
@@ -72,7 +64,7 @@ public class AddQuizSteps extends PageObject {
         addQuiz.validateOnCoursePage();
     }
 
-    @Then("I success add quiz section course")
+    @Then("I success add course quiz content")
     public void SuccessRenameQuiz(){
         addQuiz.validateOnCoursePage();
     }

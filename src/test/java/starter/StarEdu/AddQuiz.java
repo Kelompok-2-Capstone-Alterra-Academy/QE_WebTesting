@@ -10,7 +10,7 @@ public class AddQuiz extends PageObject {
 
     private By selectQuizContentType() { return By.xpath ("//*[@id=\"selectWrapper\"]/div/div/div[4]");}
 
-    private By quizSection() { return By.xpath("//*[@id=\"content-535\"]");}
+    private By quizSection() { return By.xpath("//*[@id=\"content-540\"]");}
 
     private By editNameQuiz() {return By.id("contentTitleEditIcon");}
 
@@ -39,10 +39,6 @@ public class AddQuiz extends PageObject {
     private By searchFileQuizField() { return By.id("modalSearch");}
 
     private By fillSearchFileQuiz() { return By.id("modalSearchInput");}
-
-    private By numberOfFilesQuizPerPage() { return By.id("modalContentSelectContainer");}
-
-    private By SelectNumberQuizPerPage() { return By.id("/html/body/div[2]/div[3]/div[2]/div[1]/div/div/div/div[3]");}
 
 
     @Step
@@ -99,9 +95,4 @@ public class AddQuiz extends PageObject {
     @Step
     public void fillSeacrhQuizField(String SearhFileQuiz) { $(fillSearchFileQuiz()).type(SearhFileQuiz);}
 
-    @Step
-    public void clickNumberOfFilesQuizPerPage() { $(numberOfFilesQuizPerPage()).click();}
-
-    @Step
-    public void chooseNumberQuizPerPage() { $(SelectNumberQuizPerPage()).click();}
 }

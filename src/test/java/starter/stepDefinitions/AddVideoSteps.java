@@ -83,7 +83,7 @@ public class AddVideoSteps {
         addVideo.clickViewVideo();
     }
 
-    @Then("I success add video section course")
+    @Then("I success add course video content")
     public void SuccessAddVideo(){
         addVideo.validateOnTheCoursePage();
     }

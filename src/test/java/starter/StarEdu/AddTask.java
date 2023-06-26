@@ -11,7 +11,7 @@ public class AddTask extends PageObject {
 
     private By selectAssignmentContentType() { return By.xpath ("//*[@id=\"selectWrapper\"]/div/div/div[3]");}
 
-    private By AssignmentSection() { return By.id("content-551");}
+    private By AssignmentSection() { return By.id("content-565");}
 
     private By editNameAssignment() {return By.id("contentTitleEditIcon");}
 

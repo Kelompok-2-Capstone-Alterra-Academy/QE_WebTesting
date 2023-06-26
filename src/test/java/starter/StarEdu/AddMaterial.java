@@ -11,7 +11,7 @@ public class AddMaterial extends PageObject {
 
     private By selectMaterialContentType() { return By.xpath ("//*[@id=\"selectWrapper\"]/div/div/div[2]");}
 
-    private By materialSection() { return By.xpath("//*[@id=\"content-539\"]");}
+    private By materialSection() { return By.xpath("//*[@id=\"content-563\"]");}
 
     private By editNameMaterial() {return By.id("contentTitleEditIcon");}
 

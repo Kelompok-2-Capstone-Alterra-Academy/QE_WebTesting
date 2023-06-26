@@ -26,7 +26,7 @@ public class Customer extends PageObject {
 
     private By ContactStudents() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[3]/div/table/tbody/tr[4]/td[5]/div/button[1]");}
 
-    private By RemoveSessionButton() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[3]/div/table/tbody/tr[3]/td[5]/div/button[2]");}
+    private By RemoveSessionButton() { return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div[3]/div/table/tbody/tr[2]/td[5]/div/button[2]");}
 
     private By RemoveButton() { return By.xpath("/html/body/div[2]/div[3]/div[2]/button[2]");}
 

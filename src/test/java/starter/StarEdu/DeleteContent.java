@@ -9,7 +9,7 @@ public class DeleteContent extends PageObject {
 
     private By coursePage() { return By.xpath("//*[@id=\"root\"]/div[1]/div");}
     private By Section(){return By.xpath("//*[@id=\"root\"]/div[1]/div[2]/div/div/div[3]/div[2]/div[8]/div[2]");}
-    private By SectionVideo(){return By.id("content-544");}
+    private By SectionVideo(){return By.id("content-560");}
     private By IconDeleteContent(){return By.id("deleteButton");}
     private By cancelbutton(){return By.xpath("/html/body/div[2]/div[3]/div[2]/button[1]");}
     private By DeleteContentButton(){return By.xpath("/html/body/div[2]/div[3]/div[2]/button[2]");}

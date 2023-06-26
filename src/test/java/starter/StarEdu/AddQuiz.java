@@ -10,7 +10,7 @@ public class AddQuiz extends PageObject {
 
     private By selectQuizContentType() { return By.xpath ("//*[@id=\"selectWrapper\"]/div/div/div[4]");}
 
-    private By quizSection() { return By.xpath("//*[@id=\"content-540\"]");}
+    private By quizSection() { return By.xpath("//*[@id=\"content-564\"]");}
 
     private By editNameQuiz() {return By.id("contentTitleEditIcon");}
 
